@@ -1,0 +1,163 @@
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.715);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: linear-gradient(90deg, rgba(156,153,217,1) 0%, rgba(152,152,200,1) 30%, rgba(238,174,202,1) 100%);
+}
+
+
+
+.login-title {
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 600;
+
+}
+
+.login-form {
+  width: 400px;
+
+  padding: 36px 48px 48px 48px;
+  background-color: #f2efee;
+
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 9px;
+  border: none;
+}
+
+.login-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(253, 242, 233, 0.5);
+}
+
+.btn--form {
+  background-color: #f48982;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 8px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+button {
+  outline: 1px solid #f48982;
+}
+
+
+/* html,
+body {
+  height: 100%;
+} */
+
+body {
+  margin: 0;
+  /* background: linear-gradient(45deg, #49a09d, #5f2c82); */
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* .container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+table {
+  width: 800px;
+  border-collapse: collapse;
+  /* overflow: hidden; */
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+th {
+  text-align: left;
+}
+
+thead {
+  th {
+    background-color: #55608fc9;
+  }
+}
+
+tbody {
+  tr {
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+}
